@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>My Card</title>
+    <style>
+        body {
+            font-family: 'Montserrat', serif;
+            background: #f7f7f7;
+        }
+        .material-icons{
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 98vh;
+            align-items: center;
+            display: flex;
+        }
+        section .card {
+            height: 36rem;
+            width: 20rem;
+            background: white;
+            border-radius: 2rem 2rem 2rem 2rem;
+            box-shadow: 0px 7px 60px #e3e3e3;
+            overflow: hidden;
+        }
+        section .card .info{
+            position: relative;
+        }
+        .info .content-img {
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 0 0 2rem 2rem;
+        }
+        .info .content-img .state{
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            top: 16px;
+            right: 17px;
+            border-radius: 50%;
+        }
+        .active{
+            background-color: #7ec562;
+            border: 3px solid white;
+        }
+        .info .content-img img{
+            width: 100%;
+        }
+        .info .text {
+            text-align: center;
+            margin-top: 10px;
+            padding: 18px;
+        }
+        .info .text p:nth-child(1){
+            margin: 0px 0 8px 0;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .info .text p:nth-child(2){
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .info .social-networks{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            grid-template-areas: "a a a";
+            grid-gap: 46px;
+            color: #e95151;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .info .about{
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .info .about .title{
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+        .info .about p{
+            font-weight: 300;
+            margin: 0;
+        }
+        .info .content-btn {
+            margin-top: 26px;
+            height: 19rem;
+            overflow: hidden;
+        }
+        .btn{
+            width: 100%;
+            border: none;
+            height: 45px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;   
+            background: #3aa1c9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="info">
+                <div class="content-img">
+                    <div class="state active"></div>
+                    <img src="https://lh3.googleusercontent.com/8t-JNxp1yeYfQrytpemLWlGtfxDDNaqurVhQbbOsBESPPYcQOSnJePvqsGoj6WAsrEmIVSHttl09qP1_dFkmBJRwPcM7d_QSCBiR5mQ6DzuC5HQKx3JXMNLlHI5pL5fjYfJtW5BnAmI-WNcMhk21hp7IXlvWCOv-0hmZjjcrFMnwF5hog6VuwOYR5DmYYiLM3LadFsLW6kNCipJcSwsor-JW0i6WopYcKOj-o0ZcjBBA5zvQYyairiQm9r03es9WxNmPumAh92ghQmRJtWAFcjeFqGNEG5sdFhyL6mDc1rxNuLeAISdCstsbsKpz1-z-h-kcnv4HvBu1gjPrV93Hi-q8DnLlQe1QxJs-fmnGOLCJvJLkOQIqU8zb_lbSlm8jPCT8A9N0zEOCkzwMzwDU9oVReIF0us1JMOdASDqkrq4IEFqgPZX0pzsX5Cc_Sk4lJXYrUnfWd6YCMFo2dnxUhZmedKVR7HsbHJ2FFmR9SQap54plKtLqSCT94TxQCpwK8TIX-Q33k-HUEu9sjRudngKDda7RWv87-_rTp6fZ4J8OnC9Fpa8CdmLQ7d_a7Cxedp5NZWjAoU-Xh4eeCxWdTQV-luSloDD4FPUyTuPGfyeGTusw9S0YXMBzXd23ffyqBGpM8L4uIzj7rDeXlq0eiRxggZhxHeAUQF4Ll371_iljwfS5MIE4vo47f6mjpfyxhcIkpKmVsUwMyExVeyDnqluSHcgGBLt2El9QmhbpHYUMxVPg34F8MiA8YNmfSXBW7Ah9GzzPyB3_inAWP_36E635mjWpWPZLR1n1UE6McA32CHkp_ite6HJvZgLzMqoh9c8fb2cr09CzmVFF6fecOgyGelrQM5zYKD9Pdh6dpFoqa7PkCxwWJe4Ko28YXHTc2-gxjKBKTdfzmhjKiSghVcUHqo5jM7bRDngbQ5s=w1566-h937-no?authuser=0" alt="">
+                </div>
+                <div class="text">
+                    <p>Alexis Corrales Perea</p> 
+                    <p>Front End Developer</p>
+                </div>
+                <div class="social-networks">
+                    <span class="material-icons">call</span>
+                    <span class="material-icons">email</span>
+                    <span class="material-icons">location_on</span>
+                </div>
+                <div class="about">
+                    <p class="title">About</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam nihil nisi dignissimos deleniti unde.</p>
+                </div>
+                <div class="content-btn">
+                    <button class="btn">Follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
